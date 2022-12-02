@@ -1,0 +1,405 @@
+.__container{
+    width: 1300px;
+    margin: 0px 250px 0px 250px;
+    z-index: 50;
+    height: auto;
+}
+.wrapper {
+}
+/*============================MENU======================================*/
+header {
+
+}
+.header-menu {
+    
+}
+.menu-content {
+    margin-top: 33px;
+}
+.menu-list {
+    display: flex;
+    justify-content: space-between;
+}
+.menu-item {
+    font-family: 'Gilroy-Bold';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #828282;
+    
+}
+.menu-zerta{
+    border-bottom: 1px solid #828282;
+    width: 100%;
+    margin-top: 32px;
+}
+.active {
+    color: #070707;
+}
+/*================================================menu-burger=====================================================*/
+.burger-menu_link{
+    font-family: 'Gilroy-Bold';
+    font-size: 34px;
+    line-height: 42px;
+    
+    color: #828282;
+}
+.burger-menu_button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 30;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+  }
+  .burger-menu_button:hover .burger-menu_lines {
+    filter: brightness(0.7);
+  }
+  
+  .burger-menu_button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  .burger-menu_lines::before,
+.burger-menu_lines::after,
+.burger-menu_lines {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background-color: #000000;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.burger-menu_lines {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.burger-menu_lines::before {
+  content: '';
+  top: -12px;
+}
+.burger-menu_lines::after {
+  content: '';
+  top: 12px;
+}
+.burger-menu_active .burger-menu_lines {
+    background-color: transparent;
+  }
+  .burger-menu_active .burger-menu_lines::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+  .burger-menu_active .burger-menu_lines::after{
+    top: 0;
+    transform: rotate(-45deg);
+  }
+  
+  .burger-menu_nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    background: #FFFFFF;
+    overflow-y: auto;
+    right: -100%;
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -o-transition: 0.8s;
+    transition: 0.8s;
+  }
+  .burger-menu_active .burger-menu_nav {
+    right: 0;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+  }
+  .burger-menu_link:not(last-child){
+    padding-bottom: 38px;
+  }
+  .burger-menu_link:hover {
+    filter: brightness(0.9);
+  }
+  .burger-menu_overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+  }
+  .burger-menu_active .burger-menu_overlay {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: sans-serif;
+    font-size: 72px;
+    text-transform: uppercase;
+    color: #000;
+  }
+.burger-menu_link{
+    padding-top: 66px;
+    padding-left: 26px;
+}
+/*============================================MAIN===========================================================*/
+.main {
+    flex: 1 1 auto;
+}
+/*============================================1-block=============================================================*/
+.main-desinger {
+    display: flex;
+    justify-content: space-between; 
+}
+.desinger-denis {
+    font-family: 'Gilroy-Bold';
+    font-size: 47.3392px;
+    line-height: 59px;
+    color: #070707;
+    margin-top: 40px;
+}
+.desinger-inf {
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+    margin-top: 95px;
+}
+.desinger-eng-ru {
+    margin-top: 95px;
+    display: flex;
+    transform: rotate(-90deg);
+    
+}
+.eng{
+    font-family: 'Gilroy-Bold';
+    font-size: 16px;
+    line-height: 20px;
+    color: #828282;
+}
+.desinger-ru {
+margin-right: 5px;
+}
+.desinger-zerta{
+    border: 1px solid black;
+    height: auto;
+}
+.desinger-eng {
+    margin-left: 5px;
+}
+
+/*============================================2-block=============================================================*/
+.main-img{
+
+}
+.img{
+    margin-top: 50px;
+}
+/*=============================================3-block=============================================================*/
+.main-abot {
+    
+}
+.abot-h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 224px;
+    font-family: 'Gilroy-Bold';
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    color: #070707;
+}
+.abot-text {
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #070707;
+}
+/*==========================================4-block======================================================================*/
+.main-skils {
+}
+.skils-content {
+    margin-top: 198px;
+}
+.skils-info{
+}
+.skils-h2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Gilroy-Bold';
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    color: #070707;
+
+}
+.skils-text {
+    padding-top: 69px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #070707;
+}
+.skils-program {
+    display: flex;
+    justify-content: space-between;
+}
+.program-photo {
+    display: flex;
+    flex-direction: column;
+    max-height: 206px;
+    margin-top: 175px;
+    width: 100%;
+    align-items: center;
+}
+.program-logo{
+    max-width: 89px;
+    max-height: 88px;
+}
+.program-logo-figma{
+    max-width: 58px;
+    max-height: 89px;
+}
+.program-text {
+    padding-top: 24px;
+    font-family: 'Gilroy-Bold';
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
+    text-align: center;
+}
+.program-ozen {
+    max-width: 166px;
+    max-height: 26px;
+    margin-top: 40px;
+}
+.program-ozen-figma{
+    max-width: 166px;
+    max-height: 26px;
+    margin-top: 56px;
+}
+/*================================================================================*/
+.main-portfolio {
+}
+.portfolio-content {
+    margin-top: 222px;
+}
+.portfolio-h2 {
+    text-align: center;
+    font-family: 'Gilroy-Bold';
+font-size: 34px;
+line-height: 42px;
+text-align: center;
+
+/* Black */
+
+color: #070707;
+}
+.portfolio-img {
+    margin-top: 47px;
+}
+.portfolio-text {
+    text-align: center;
+    margin-top: 44px;
+    font-family: 'Gilroy-Medium';
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+text-decoration-line: underline;
+
+/* Black */
+
+color: #070707;
+}
+/*==========================================================================================*/
+.main-contact {
+}
+.contact-content {
+    margin-top: 210px;
+}
+.contact-h2 {
+    font-family: 'Gilroy-Bold';
+font-size: 34px;
+line-height: 42px;
+text-align: center;
+
+color: #070707;
+    text-align: center;
+}
+.contact-text {
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Gilroy-Medium';
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+color: #070707;
+}
+.contact-butom {
+    font-family: 'Gilroy-Bold';
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background: #070707;
+    border-radius: 100px;
+    padding: 12px 36px 12px 36px;
+
+}
+.butom{
+    text-align: center;
+    margin-top: 42px;
+    display: flex;
+    justify-content: center;
+}
+/*=================================================================================*/
+.footer {
+}
+.footer-contact {
+}
+.contact-img {
+    display: flex;
+    justify-content: center;
+    padding-top: 91px;
+    margin-left: 60px;
+}
+.img-con:not(last-child) {
+   margin-right: 61px;
+}
+.img-con {
+
+    max-width: 40px;
+    max-height: 40px;
+}
+.contact-tex {
+    font-family: 'Gilroy-Medium';
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+
+color: #828282;
+    margin-top: 45px;
+    text-align: center;
+    margin-bottom: 123px;
+}

@@ -1,0 +1,104 @@
+
+@media (max-width: 1560px){
+    .__container{
+        margin: 0px 100px 0px 100px;
+    }
+    .header-content {
+       width: auto; 
+    }
+    .main-desinger{
+        width: auto;
+    }
+    .main-img{
+        width: auto;
+    }
+    .main-abot {
+        width: auto;
+    }
+    .main-skils {
+        width: auto;
+    }
+    .skils-program {
+    width: auto;
+    }
+    .main-portfolio{
+        width: auto;
+    }
+    .main-contact {
+        width: auto;
+    }
+    .footer-contact {
+        width: auto;
+    }
+
+}
+
+@media(max-width: 980px){
+    .__container{
+        margin: 0px 50px 0px 50px;
+    }
+    .menu-list {
+       flex-wrap: wrap;
+    }
+    .skils-program {
+      flex-wrap: wrap;
+    }
+    .program-photo{
+        flex: 1 1 50%;
+    }
+    .menu-burger {
+        position: relative; /* задаем относительное позиционирование */
+        width: 40px; /* определяем размеры блока */
+        height: 35px;
+        display: block;
+        margin-left: 10px;
+    }
+}
+@media(max-width: 525px){
+    .menu-zerta{
+        display: none;
+    }
+    .__container{
+        margin: 0px 20px 0px 20px;
+    }
+    .menu-list{
+        display: none;
+    }
+    .main-desinger{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .desinger-denis {
+        width: 100%;
+    }
+    .desinger-inf {
+     margin-top: 23px;
+    }
+    .desinger-eng-ru {
+       display: none;
+    }
+    .program-photo{
+        flex: 1 1 100%;
+    }
+    .img-no-mobile{
+        display: none;
+    }
+    .img-mobil{
+        display: flex;
+    }
+    .abot-text {
+        text-align: left;
+    }
+    .img-con:not(last-child) {
+        margin-right: 40px;
+     }
+
+}
+@media(min-width: 525px){
+    .img-mobile{
+        display: none;
+    }
+    .burger-menu{
+        display: none;
+    }
+}
